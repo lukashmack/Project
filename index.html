@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Index</title>
 </head>
 <body>
 
-    <script>
-        let name = prompt("What's your first name?","John or Peter");
+ <script>
+    
+    let name = prompt("What's your first name?","john or peter");
     
     if (name.toLowerCase() == "john") {
       alert("I showed you Wordle!");
     }
-    else (name.toLowerCase() == "Peter") {
+    else if(name.toLowerCase() == "peter") {
       alert("I'm better at fantasy baseball");
     }
+    else {
+      alert("Invalid. Try Again Bum.")
+    };
+
+  
     
     
     
