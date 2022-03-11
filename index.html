@@ -7,19 +7,16 @@
     <title>Website Index</title>
 </head>
 <body>
-
+<p>This is my index</p>
  <script>
     
-    let name = prompt("What's your first name?","john or peter");
+    let password = prompt("What's the password?","Hint: Think Elsa");
     
-    if (name.toLowerCase() == "john") {
-      alert("I showed you Wordle!");
-    }
-    else if(name.toLowerCase() == "peter") {
-      alert("I'm better at fantasy baseball");
+    if (password.toLowerCase() == "1883") {
+      window.location.href = "http://www.wagerclub.me/signup";
     }
     else {
-      alert("Invalid. Try Again Bum.")
+      alert("Invalid. Access Denied")
     };
 
   
