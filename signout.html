@@ -7,7 +7,8 @@
     <title>Document</title>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
-    body {
+
+ body {
     background-image:url("images/stadium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,19 +58,10 @@
 .btn {
   background: none;
   border: none;
-  cursor: pointer;
   line-height: 1.5;
-  font: 700 1.2rem 'Roboto Slab', sans-serif;
   padding: 0.75em 2em;
-  letter-spacing: 0.05rem;
   margin: 1em;
   width: 13rem;
-}
-
-.field {
-  font-size: 2em;
-  font-family: 'Baloo Paaji 2';
-  color: white;
 }
 
 a:hover {
@@ -138,56 +130,60 @@ ul {
         
     }
 
+
 </style>
 </head>
 
 
-
-
 <body>
-  <ul>
-    <div>
-    <li><a href="http://www.wagerclub.me/sitemap.html">Sitemap</a></li>
-    <li><a href="http://www.wagerclub.me/contact.html">Contact Us</a></li>
-    <li><a href="http://www.wagerclub.me/faq">FAQ</a></li>
-    <li><a href="http://www.wagerclub.me/homepage">Home</a></li>
-    <li><a href="http://www.wagerclub.me/signup">Sign Up</a></li>
-
-    <div class="dropdown">
-        <button class="drop2">My Account</button>
-        <div class="drop3">
-            <a href="http://www.wagerclub.me/li_profile.html">My Profile</a>
-            <a href="http://www.wagerclub.me/friends.html">My Friends</a>
-            <a href="http://www.wagerclub.me/bets.html">My Bets</a>
-            <a href="http://www.wagerclub.me/signout.html">Sign Out</a>
-            
-            
+    <ul>
+        <div>
+        <li><a href="http://www.wagerclub.me/sitemap.html">Sitemap</a></li>
+        <li><a href="http://www.wagerclub.me/contact.html">Contact Us</a></li>
+        <li><a href="http://www.wagerclub.me/faq">FAQ</a></li>
+        <li><a href="http://www.wagerclub.me/homepage">Home</a></li>
+        <li><a href="http://www.wagerclub.me/signup">Sign Up</a></li>
+    
+        <div class="dropdown">
+            <button class="drop2">My Account</button>
+            <div class="drop3">
+                <a href="http://www.wagerclub.me/li_profile.html">My Profile</a>
+                <a href="http://www.wagerclub.me/friends.html">My Friends</a>
+                <a href="http://www.wagerclub.me/bets.html">My Bets</a>
+                <a href="http://www.wagerclub.me/signout.html">Sign Out</a>
+                
+                
+            </div>
         </div>
-    </div>
-</ul>
-<br>
-<br>
-<br>
-<br>
-  <fieldset>
-    <legend class="field">Your Friends</legend>
+    </ul>
+  <br>
+  <br>
+  <br>
+  <br>
     <div class="container">
         <div class="card">
-          <img src="images/lukas.jpeg" alt="Lukas Profile Picture" class="card__image">
-          <p class="card__name">Lukas Mack</p>
-          <div class ="card">
-            <a href = "http://www.wagerclub.me/friends_unfollowed.html"><button class="btn draw-border">Unfollow</button>
-          </div>
-          <div class ="card">
-            <a href = "http://www.wagerclub.me/friends_unfollowed.html"><button class="btn draw-border">Message</button>
-          </div>
-          <div class ="card">
-                <a href = "http://www.wagerclub.me/mainhub.html"><button class="btn draw-border">Home</button>
-          </div>
-    </div>
-  </fieldset>
+          <img src="https://facultyprofilefiles.babson.edu/MirroredFiles/zli/pci/LiZ-1.jpg" alt="Professor Li Profile Picture" class="card__image">
+          <p class="card__name">Professor Li</p>
+          <a href = ""><button class="btn draw-border">My Bets</button>
+          <a href = ""><button class="btn draw-border">My Account</button>
+          <a href = "http://www.wagerclub.me/friends.html"><button class="btn draw-border">Friends</button>
+          <a href = "http://www.wagerclub.me/mainhub.html"><button class="btn draw-border">Home</button>
+        </div>
 
-  
+
+        <script>
+    
+            let password = prompt("Type 'yes' to Signout");
+            
+            if (password.toLowerCase() == "yes") {
+              window.location.href = "http://www.wagerclub.me/homepage.html";
+            }
+            else {
+                window.location.href = "http://www.wagerclub.me/li_profile.html";
+            };
+        </script>
+
+
 
   
     
