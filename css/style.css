@@ -1,0 +1,48 @@
+body {
+    background-image: url("images/stadium.jpg");
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+
+button {
+    margin-right: 20px;
+    background-color: White;
+    height: 50px;
+    width: 120px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+
+
+
+.cards img {
+    margin: 15px 20px 0;
+}
+
+.result {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}

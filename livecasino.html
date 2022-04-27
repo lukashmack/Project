@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>hw3-3</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="center">Blackjack</h1>
+    <h2 class="center">Dealer</h2>
+    <div class="center">
+      <div class="cards">
+        <img alt="card-1" height="200" src="images/cards/green_back.png" id="one"/>
+        <img alt="card-2" height="200" src="images/cards/green_back.png" id="two"/>
+        </div>
+        <hr>
+        <h2 class="center">Player 1</h2>
+        <div class="cards">
+        <img alt="card-3" height="200" src="images/cards/green_back.png" id="three"/>
+        <img alt="card-4" height="200" src="images/cards/green_back.png" id="four"/>
+
+        <p id="result" class="center result">And the winner is?</p>
+        <button id="btn">Hit</button>
+      </div>
+    </div>
+
+
+
+
+    <script>
+
+      function blackjack(){
+
+      const imageone = document.getElementById("one")
+      const imagetwo = document.getElementById("two")
+      const imagethree = document.getElementById("three")
+      const imagefour = document.getElementById("four")
+
+
+      const values = [ "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+      const suits = ["H", "D", "S", "C"];
+      const numbers = [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "10", "10", "10"];
+
+
+      let xone = Math.floor(Math.random() * 13);
+      let yone = Math.floor(Math.random() * 4);  
+
+
+      zone = values[xone] + suits[yone]
+
+      imageone.src = "images/cards/" + zone + ".png";
+
+      let xtwo = Math.floor(Math.random() * 13);
+      let ytwo = Math.floor(Math.random() * 4);  
+
+
+      ztwo = values[xtwo] + suits[ytwo]
+
+      imagetwo.src = "images/cards/" + ztwo + ".png"
+
+
+
+      let xthree = Math.floor(Math.random() * 13);
+      let ythree = Math.floor(Math.random() * 4);  
+
+
+      zthree = values[xthree] + suits[ythree]
+
+      imagethree.src = "images/cards/" + zthree + ".png"
+
+      let xfour = Math.floor(Math.random() * 13);
+      let yfour = Math.floor(Math.random() * 4);  
+
+
+      zfour = values[xfour] + suits[yfour]
+
+      imagefour.src = "images/cards/" + zfour + ".png"
+
+      let Dealertotal = numbers[xone] + numbers[xtwo] 
+      let Playertotal = numbers[xthree] + numbers[xfour]
+
+      const result = document.getElementById("result")
+
+      if (Dealertotal >= Playertotal) {
+        result.textContent = "Dealer Wins"
+      }
+      else {
+        result.textContent = "Player Wins!"
+      }
+      }
+
+    
+      
+      
+      document.getElementById('btn').onclick = function() {
+      blackjack()
+      }
+
+    
+
+  
+
+
+    </script>
+  </body>
+</html>
