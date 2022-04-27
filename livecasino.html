@@ -23,10 +23,14 @@
 
         <p id="result" class="center result">And the winner is?</p>
         <p>Bet Amount = <input type="number" name="x" id="x" /></p>
-        <button id="btn">Hit</button>
+        <button id="btn" class="btn"> Hit</button>
         <div>
-        <input id="start" class="center" type = "button" value = "Collect Winning" />
-        <input class="center" type = "button" value = "Stop" onclick = "stop();" />
+        <button input id="start" class="btn" type = "button">Collect Winnings</button>
+        <a href="http://www.wagerclub.me/livecasino.html"><button type="button" class="btn">      
+            Play Again
+          </button>
+       
+
         </div>
         <div>
             <img id = "money" src = "images/money.png" />
@@ -97,10 +101,12 @@
       const result = document.getElementById("result")
 
       if (Dealertotal >= Playertotal) {
+          result.style.color = "red"
         result.textContent = "Dealer Wins. You Lost "+bet+". Play Again. The Win Streak is Coming"
       }
       else {
-        result.textContent = "Dealer Wins. You Won "+bet+". Don't Forget To Collect Your Winnings Below!"
+        result.style.color = "green"
+        result.textContent = "Player Wins. You Won "+bet+". Don't Forget To Collect Your Winnings Below!"
       }
       };
 
@@ -125,7 +131,7 @@
 
             function moveDown() {
                img.style.top = parseInt(img.style.top) + 10 + 'px';
-               animate = setTimeout(moveDown,10);
+               animate = setTimeout(moveDown,8);
             
                };
 
@@ -137,10 +143,7 @@
             
 
 
-            function stop() {
-               clearTimeout(animate);
-               img.style.top = "-800px"; 
-            }
+            
 
                window.onload = img1;
 

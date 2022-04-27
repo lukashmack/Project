@@ -18,16 +18,25 @@ div {
 }
 
 
-button {
-    margin-right: 20px;
-    background-color: White;
-    height: 50px;
-    width: 120px;
-}
+.start {
+        margin-right: 20px;
+        background-color: White;
+        height: 50px;
+        width: 120px;
+    }
+
 
 label {
     margin-right: 10px;
 }
+
+.btn {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px; 
+  }
 
 
 
@@ -38,7 +47,7 @@ label {
 
 .result {
     font-size: 1.5rem;
-    color: red;
+    color: black;
     font-weight: bold;
 }
 
