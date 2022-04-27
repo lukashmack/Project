@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>hw3-3</title>
     <link rel="stylesheet" href="css/style.css" />
+    <title>Live Casino</title>
   </head>
-  <body>
+
+ <body>
     <h1 class="center">Blackjack</h1>
     <h2 class="center">Dealer</h2>
     <div class="center">
@@ -21,7 +22,18 @@
         <img alt="card-4" height="200" src="images/cards/green_back.png" id="four"/>
 
         <p id="result" class="center result">And the winner is?</p>
+        <p>Bet Amount = <input type="number" name="x" id="x" /></p>
         <button id="btn">Hit</button>
+        <div>
+        <input id="start" class="center" type = "button" value = "Collect Winning" />
+        <input class="center" type = "button" value = "Stop" onclick = "stop();" />
+        </div>
+        <div>
+            <img id = "money" src = "images/money.png" />
+        </div>
+            
+
+       
       </div>
     </div>
 
@@ -31,6 +43,8 @@
     <script>
 
       function blackjack(){
+
+        const bet = parseFloat(document.getElementById("x").value);
 
       const imageone = document.getElementById("one")
       const imagetwo = document.getElementById("two")
@@ -83,19 +97,55 @@
       const result = document.getElementById("result")
 
       if (Dealertotal >= Playertotal) {
-        result.textContent = "Dealer Wins"
+        result.textContent = "Dealer Wins. You Lost "+bet+". Play Again. The Win Streak is Coming"
       }
       else {
-        result.textContent = "Player Wins!"
+        result.textContent = "Dealer Wins. You Won "+bet+". Don't Forget To Collect Your Winnings Below!"
       }
-      }
+      };
 
-    
-      
-      
       document.getElementById('btn').onclick = function() {
       blackjack()
       }
+
+
+
+      let animate;
+    let img =document.getElementById("money");
+        
+            
+            function img1() {
+               img.style.position= 'relative';
+               img.style.left = "-230px"
+               img.style.top = '-2100px'; 
+               img.style.height = '1200px'
+            }
+
+            
+
+            function moveDown() {
+               img.style.top = parseInt(img.style.top) + 10 + 'px';
+               animate = setTimeout(moveDown,10);
+            
+               };
+
+               document.getElementById("start").onclick = function() {
+                moveDown()
+            }
+
+
+            
+
+
+            function stop() {
+               clearTimeout(animate);
+               img.style.top = "-800px"; 
+            }
+
+               window.onload = img1;
+
+    
+
 
     
 
