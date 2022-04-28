@@ -1,10 +1,12 @@
 body {
-    background-image: "images/bj.jpg";
+    background-image: url("images/bj.jpg");
     font-family: Helvetica, sans-serif;
     font-size: 1.2rem;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 
 div {
@@ -14,23 +16,26 @@ div {
 }
 
 .center {
+    
     text-align: center;
 }
 
 
 .start {
+    
         margin-right: 20px;
-        background-color: White;
         height: 50px;
         width: 120px;
     }
 
 
 label {
+    
     margin-right: 10px;
 }
 
 .btn {
+    
     font-size: 20px;
     display: inline-block;
     padding: 10px 20px;

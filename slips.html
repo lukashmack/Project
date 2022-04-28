@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Quiz 3 - Question 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+      }
+
+      h1 {
+        padding: 20px;
+        text-align: center;
+        background-color: #333333;
+        color: #f4f4f4;
+      }
+
+      div {
+        width: 80%;
+        margin: 10px auto;
+      }
+
+      li {
+        margin: 10px;
+      }
+
+      img {
+        height: 300px;
+        padding: 100px;
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1 id="header">Bet Slips</h1>
+    
+    <div>
+      <img id="1"
+        alt="Super Bowl Bet"
+        src="https://images.ladbible.com/resize?type=jpeg&quality=70&width=648&fit=pad&dpr=1&url=https://eu-images.contentstack.com/v3/assets/bltcd74acc1d0a99f3a/blt898bc0c9e644760e/6209a2e3eff5f428c295389b/273662603_275789851178324_891786684685746003_n.jpeg"
+        onmouseover="changeSlip ()"
+        onmouseout="changeOdell ()"
+      />
+      <img id="2"
+        alt="Leicester City Bet Slip"
+        src="https://pbs.twimg.com/media/ChSy46SU8AEhmpk?format=jpg&name=4096x4096"
+        onmouseover="changeSlip ()"
+        onmouseout="changeLeicester ()"
+        />
+    </div>
+  </body>
+
+  <script>
+    function changeSlip () {
+      document.getElementById("1").src = "https://www.nj.com/resizer/v3lnFlU8UZbx5JVfPAtWkpY9U38=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/XA4ZV2WU5BDZNLB2FB6CMUIETA.JPG";
+      const header = document.getElementById("header");
+      header.textContent = "Odell's Super Bowl Catch";
+    }
+
+    function changeSlip2 () {
+      document.getElementById("2").src = "https://pbs.twimg.com/media/ChSy46SU8AEhmpk?format=jpg&name=4096x4096";
+      const header = document.getElementById("header");
+      header.textContent = "Leicester City 5000-1 to Win Premier League";
+    }
+
+    
+
+    function changeOdell () {
+      document.getElementById("1").src = "https://images.ladbible.com/resize?type=jpeg&quality=70&width=648&fit=pad&dpr=1&url=https://eu-images.contentstack.com/v3/assets/bltcd74acc1d0a99f3a/blt898bc0c9e644760e/6209a2e3eff5f428c295389b/273662603_275789851178324_891786684685746003_n.jpeg";
+      const header = document.getElementById("header");
+      header.textContent = "Winning Bet Slip";
+    }
+
+    function changeLeicester () {
+      document.getElementById("2").src = "https://i2-prod.mirror.co.uk/incoming/article7920831.ece/ALTERNATES/s1200b/Leicester-City-lift-the-Premier-League-trophy.jpg";
+      const header = document.getElementById("header");
+      header.textContent = "Leicester Lifting Trophy";
+    }
+
+
+
+
+
+</script>
+</html>

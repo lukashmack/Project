@@ -6,187 +6,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="betting,sports,gambling,social,social-media">
     <link rel="icon" href="1.ico" type="image/1.ico">
-    <title>My Bets</title>
-</head>
+    <title>Document</title>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
-    body {
-  background-image: url("images/stadium.jpg");
-  height: 1000px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+ body {
+    background-image:url("images/stadium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baloo Paaji 2';
+}
+
+.card {
+  background-color: #222831;
+  height: 40em;
+  width: 30em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+.card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgb(25, 28, 235);
+}
+
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
   position: relative;
 }
 
-    table {
-    border-color: lightgray;
-    width: 800px; 
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Baloo Paaji 2';
-    font-size: 1.25 em;
-    border-collapse: collapse;
-    color: white;
-    text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
+
+
+.btn {
+  background: none;
+  border: none;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  margin: 1em;
+  width: 13rem;
+}
+
+a:hover {
+  background-color: white;
+}
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 2px;
+      background-color: lightgray;
+      position: fixed;
+      width: 100%;
+      top:0;
+      left: 0;
+      font-size: 1em;
+      font-family: 'Baloo Paaji 2';
+
     }
+    
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Baloo Paaji 2';
+    }
+
+    .drop2 {
+
+        padding: 16px;
+        border: 10em;
+        font-family: 'Baloo Paaji 2';
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .drop3 {
+        display: none;
+        position: absolute;
+        background-color:lightskyblue;
+    }
+
+
+    .drop3 a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+        font-family: 'Baloo Paaji 2';
+    }
+
+    .drop3 a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .drop3 {
+        display: block;
+        
+    }
+
+
+</style>
+</head>
+
+
+<body>
+  <ul>
+    <div>
+    <li><a href="http://www.wagerclub.me/sitemap.html">Sitemap</a></li>
+    <li><a href="http://www.wagerclub.me/contact.html">Contact Us</a></li>
+    <li><a href="http://www.wagerclub.me/faq.html">FAQ</a></li>
+    <li><a href="http://www.wagerclub.me/index.html">Home</a></li>
+    <li><a href="http://www.wagerclub.me/signup.html">Sign Up</a></li>
+
+    <div class="dropdown">
+        <button class="drop2">My Account</button>
+        <div class="drop3">
+            <a href="http://www.wagerclub.me/li_profile.html">My Profile</a>
+            <a href="http://www.wagerclub.me/friends.html">My Friends</a>
+            <a href="http://www.wagerclub.me/bets.html">My Bets</a>
+            <a href="http://www.wagerclub.me/signout.html">Sign Out</a>
+            
+            
+        </div>
+    </div>
+</ul>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="container">
+        <div class="card">
+          <img src="https://facultyprofilefiles.babson.edu/MirroredFiles/zli/pci/LiZ-1.jpg" alt="Professor Li Profile Picture" class="card__image">
+          <p class="card__name">Professor Li</p>
+          <table>
+            <caption> My Bets </caption>
+            <col>
+            <col>
+            <colgroup span="3"></colgroup>
+           
+            <tbody>
+                <tr>
+                    <td rowspan="1" class="width2">Bet #</td>
+                    <td rowspan="1" class="width2">Sportsbook</td> 
+                    <td rowspan="1" class="width2">Betting Team</td> 
+                    <td rowspan="1" class="width2">Opponent</td>
+                    <td rowspan="1" class="width2">Result</td> 
+        
+                  </tr>
+            </tbody>
+           
+            <tr>
+                <td rowspan="1" class="width2">3</td>
+                <td rowspan="1" class="width2">DraftKings</td> 
+                <td rowspan="1" class="width2">Knicks +3.5 (-110)</td> 
+                <td rowspan="1" class="width2">Hawks</td>
+                <td rowspan="1" class="width2">TBD</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="width2">2</td>
+                <td rowspan="1" class="width2">FanDuel</td> 
+                <td rowspan="1" class="width2">Celtics ML (-220)</td> 
+                <td rowspan="1" class="width2">Lakers</td>
+                <td rowspan="1" class="width2">WIN!</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="width2">1</td>
+                <td rowspan="1" class="width2">FanDuel</td> 
+                <td rowspan="1" class="width2">Warriors -5 (-110)</td> 
+                <td rowspan="1" class="width2">Pistons</td>
+                <td rowspan="1" class="width2">WIN!</td>
+            </tr>
+          </table>
+          <a href = "http://www.wagerclub.me/slips.html"><button class="btn draw-border">Biggest Winners</button>
+        </div>
+
 
 
   
-    td {
-    border: 1px solid lightgray;
-    text-align: center;
-    } 
-
-
-    .width2{
-        width: 30%;
-        font-family: 'Baloo Paaji 2';
-        font-size: 1.5em;
-    }
-
-
-    caption {
-        font-size: 40px;
-    }
-
-    ul {
- list-style-type: none;
- margin: 0;
- padding: 2px;
- background-color: lightgray;
- position: fixed;
- width: 100%;
- top:0;
- left: 0;
- font-size: 1em;
- font-family: 'Baloo Paaji 2';
-
-}
-
-li {
- float: left;
-}
-
-li a {
- display: block;
- color: black;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
- font-family: 'Baloo Paaji 2';
-}
-
-.drop2 {
-
-   padding: 16px;
-   border: 10em;
-   font-family: 'Baloo Paaji 2';
-}
-
-.dropdown {
-   position: relative;
-   display: inline-block;
-}
-
-.drop3 {
-   display: none;
-   position: absolute;
-   background-color:lightskyblue;
-}
-
-
-.drop3 a {
-   color: black;
-   padding: 12px 16px;
-   display: block;
-   font-family: 'Baloo Paaji 2';
-}
-
-.drop3 a:hover {
-   background-color: #ddd;
-}
-
-.dropdown:hover .drop3 {
-   display: block;
-   
-}
     
-</style>    
-
-<body>
-    <ul>
-        <div>
-        <li><a href="http://www.wagerclub.me/sitemap.html">Sitemap</a></li>
-        <li><a href="http://www.wagerclub.me/contact.html">Contact Us</a></li>
-        <li><a href="http://www.wagerclub.me/faq.html">FAQ</a></li>
-        <li><a href="http://www.wagerclub.me/index.html">Home</a></li>
-        <li><a href="http://www.wagerclub.me/signup.html">Sign Up</a></li>
-    
-        <div class="dropdown">
-            <button class="drop2">My Account</button>
-            <div class="drop3">
-                <a href="http://www.wagerclub.me/li_profile.html">My Profile</a>
-                <a href="http://www.wagerclub.me/friends.html">My Friends</a>
-                <a href="http://www.wagerclub.me/bets.html">My Bets</a>
-                <a href="http://www.wagerclub.me/signout.html">Sign Out</a>
-                
-                
-            </div>
-        </div>
-    </ul>
-
-    
-    <table>
-        <caption> My Bets </caption>
-        <col>
-        <col>
-        <colgroup span="3"></colgroup>
-       
-        <tbody>
-            <tr>
-                <td rowspan="1" class="width2">Bet #</td>
-                <td rowspan="1" class="width2">Sportsbook</td> 
-                <td rowspan="1" class="width2">Betting Team</td> 
-                <td rowspan="1" class="width2">Opponent</td>
-                <td rowspan="1" class="width2">Result</td> 
-    
-              </tr>
-        </tbody>
-       
-        <tr>
-            <td rowspan="1" class="width2">3</td>
-            <td rowspan="1" class="width2">DraftKings</td> 
-            <td rowspan="1" class="width2">New York Knicks +3.5 (-110)</td> 
-            <td rowspan="1" class="width2">Atlanta Hawks</td>
-            <td rowspan="1" class="width2">TBD</td>
-        </tr>
-        <tr>
-            <td rowspan="1" class="width2">2</td>
-            <td rowspan="1" class="width2">FanDuel</td> 
-            <td rowspan="1" class="width2">Boston Celtics ML (-220)</td> 
-            <td rowspan="1" class="width2">Los Angeles Lakers</td>
-            <td rowspan="1" class="width2">WIN!</td>
-        </tr>
-        <tr>
-            <td rowspan="1" class="width2">1</td>
-            <td rowspan="1" class="width2">FanDuel</td> 
-            <td rowspan="1" class="width2">Golden State Warriors -5 (-110)</td> 
-            <td rowspan="1" class="width2">Detroit Pistons</td>
-            <td rowspan="1" class="width2">WIN!</td>
-        </tr>
-      </table>
+      
 </body>
 </html>
 
+<!--Source: https://codepen.io/blackellis/pen/jObGbeG-->
 <!--Source for shading: https://stackoverflow.com/questions/23968961/css-how-can-i-make-a-font-readable-over-any-color-->
 
 <!-- I, Lukas Mack, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work.
